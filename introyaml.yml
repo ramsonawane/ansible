@@ -1,0 +1,51 @@
+<key>: <value>
+
+Fruits:
+  - apple
+      colour: red
+      origin: kashmir
+  - mango
+      colour: yello
+      origin: asia
+  - banana
+  - pineapple
+
+text: |
+this is first line
+this second line
+and third
+
+text: >
+this is first line
+this second line
+and third
+
+this is first line this second line and third
+
+
+Studens: 
+  - name: nandini
+    city: bangalore
+    age: 24
+    Intersts:
+      - cooking
+      - reading
+    food: 
+      - veg
+      - eggitarian  
+
+  - name: adithya
+    city: bangalore
+    age: 24
+    Intersts:
+      - cooking
+      - reading
+      - travel
+    food: 
+      - non-veg
+      - eggitarian  
+    passport: no
+    expiry: yyyy-mm-dd
+    
+
+
