@@ -1,0 +1,11 @@
+---
+- name: play book for copying cal file to allservers
+  hosts: allservers
+  tasks:
+    - name: Copy file with owner and permissions
+      copy:
+        src: cal2025.txt
+        dest: /tmp
+        owner: student
+        group: root
+        mode: '0770'

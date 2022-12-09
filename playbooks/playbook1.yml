@@ -1,0 +1,6 @@
+---
+- name: sample play echo command
+  hosts: allservers
+  tasks:
+    - name: use echo command
+      command: echo "hello world"

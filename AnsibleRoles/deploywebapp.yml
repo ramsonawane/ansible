@@ -1,0 +1,5 @@
+---
+- name: use webapp1 roles directory content install apache2
+  hosts: webservers
+  roles:
+    - webapp

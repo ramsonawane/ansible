@@ -1,0 +1,24 @@
+---
+- name: user creation play book for webservers
+  hosts: webservers
+  tasks:
+    - name: Task 1 Install nginx  (state=present is optional)
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+    - name: Task 2 create index.html with welcome message
+      copy:
+        dest: /var/www/html/index.html
+        content:  "Welcome to Nginx deployed via ansibleplaybook - 53"
+    - name: Task 3 Start service nginx, if not started
+      service:
+        name: nginx
+        state: started
+        enabled: no
+    - name: Task 4 Allow all access to tcp port 80
+      ufw:
+        rule: allow
+        port: '80'
+        proto: tcp
+        state: enabled
